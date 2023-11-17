@@ -58,16 +58,16 @@ async function onSelect(e) {
 
 function createMarkup(data) {
   const imgUrl = data.url;
-  const breedInfo = data.breeds[0];
+  const breedData = data.breeds[0];
   catInfo.innerHTML = `
-    <h2 class='cat-title'>${breedInfo.name}</h2>
+    <h2 class='cat-title'>${breedData.name}</h2>
     <div class="cat-info-box">
-      <img src="${imgUrl}" alt="${breedInfo.name}" width='600'>
+      <img src="${imgUrl}" alt="${breedData.name}" width='600'>
       <div class="cat-info-text">
-        <p>${breedInfo.description}</p>
+        <p>${breedData.description}</p>
         <ul>
-          <li><b>Life Span:</b> ${breedInfo.life_span}</li>
-          <li><b>Temperament:</b> ${breedInfo.temperament}</li>
+          <li><b>Life Span:</b> ${breedData.life_span}</li>
+          <li><b>Temperament:</b> ${breedData.temperament}</li>
         </ul>
       </div>
     </div>
